@@ -1,0 +1,44 @@
+// .fullheart {
+//     opacity: 0;
+//     // transition: opacity 1 0.15s 0.15s;
+//     transition-duration: 0.35s;
+  
+//     &:hover {
+//       opacity: 1;
+//       // color: #9356dc;
+//       background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+//       -webkit-background-clip: text;
+//       color: transparent;
+//     }
+
+//   }
+  
+  .emptyheart {
+    opacity: 1;
+    // transition-duration: 0.35s;
+    // background-color: #f6f6f6;
+    
+  
+    &:hover {
+      color: transparent;
+      // color: #9356dc;
+      background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+      -webkit-background-clip: text;
+      font-weight: 900;
+    }
+
+  }
+  
+//   .fullheart
+//   {
+//       opacity: 0;
+//       transition-duration: 0.35s;
+//   }
+
+//   .fullheart:hover
+//   {
+//       opacity: 1;
+//       background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+//       -webkit-background-clip: text;
+//       color: transparent;
+//   }

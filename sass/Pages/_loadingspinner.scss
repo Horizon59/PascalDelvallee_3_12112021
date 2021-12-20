@@ -1,0 +1,81 @@
+/* LOADING SPINNER RULES (FOR HOMEPAGE) */
+
+.noscroll-loading-spinner 
+{
+    overflow: hidden;
+    animation: scrollornot 3s step-end forwards;
+}
+
+.quote
+{
+ color: gray;
+ text-align: center;
+}
+
+.loaders
+{
+  position: fixed; /* postulat de départ */
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  background-color: white;
+  z-index: 1;
+  padding: 100%;
+    animation: animationend 3s forwards;
+    // animation: paddingend 3s step-end forwards;
+}
+
+.loadinglogo
+{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.outside-plate
+{
+    width: 220px;
+    height: 220px;
+    border:#9356DC solid 5px;
+    border-radius: 50%;
+    background-color: transparent;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.inside-plate
+{
+    width: 160px;
+    height: 160px;
+    border:#99E2D0 solid 5px;
+    border-radius: 50%;
+    margin-left: -200px;
+    margin-top: 30px;
+    background-color: transparent;
+    vertical-align: middle;
+    display: inline-block;
+    position: absolute;
+}
+
+/* HEART ANIMATION */
+
+.homepage-heart
+{
+    position: absolute;
+    margin-left: -155px;
+    margin-top: 80px;
+    color: #FF79DA;
+    animation: spin 2s linear 1;
+}
+
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes animationend{
+    100%{visibility: hidden;} 
+    // 100%{padding: 0%;}
+}
+
+@keyframes scrollornot{
+100%{overflow:visible}
+}
+

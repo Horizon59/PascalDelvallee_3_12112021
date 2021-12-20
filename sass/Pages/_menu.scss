@@ -1,0 +1,317 @@
+/* POLICE */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+
+* {
+  font-family: "roboto";
+}
+
+h1 {
+  font-family: "Shrikhand";
+}
+
+h2 {
+  font-variant: all-small-caps;
+  font-size: xx-large;
+  font-weight: normal;
+}
+
+/* HEADER RULES */
+
+
+.logo-arrow-left {
+  display: flex;
+  align-items: center;
+  padding: 1% 0%;
+}
+
+.logo {
+  width: 15%;
+  margin: auto;
+}
+
+.logo-arrow-left a {
+  margin-left: 2%;
+  color: black;
+}
+
+.food-photo {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* MAIN RULES */
+
+.menu {
+  background: #f6f6f6;
+  width: 75%;
+  margin: -5% auto;
+  position: relative;
+  border-radius: 20px;
+  padding: 1%;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+
+  i {
+    position: absolute;
+    cursor: pointer;
+    margin-left: 90%;
+  }
+}
+
+
+
+.sections {
+  display: flex;
+}
+
+.menu {
+  margin-bottom: 5%;
+}
+
+
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #f6f6f6 ;
+  border-radius: 10px;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+  width: 350px;
+  height:80px;
+  margin-right: 150px;
+  margin-bottom: 15px;
+  margin-left:0px;
+  overflow: hidden;
+
+  &__left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #f6f6f6 ;
+    margin-left: 3%;
+    // padding: -2% 2% 2% 2%;
+    padding-top: 10px;
+    
+  }
+
+  &__right {
+    width: 0%;
+    height: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+
+  &:hover {
+
+    .circlemenu {
+      animation: rotate90 0.80s  linear both;
+      color: #99E2D0;
+    }
+
+    .menu-items__right {
+      background-color: #99E2D0;
+      width: 20%;
+      transition: width 0.80s ease-in-out;
+
+    }
+    .menu-items__left {
+
+      
+      width: 80%;
+      transition: width 0.80s ease-in-out;
+
+    }
+  }
+}
+
+.ellipsis {
+  
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.recipename
+{
+  font-size: 15pt;
+  font-weight: 700;
+}
+
+.price {
+  margin-right: 5%;
+}
+
+
+.title
+{
+  width: 55px;
+  border-bottom: solid #99E2D0 thick;
+}
+
+.btn {
+  padding: 1%;
+  border: none;
+  font-size: large;
+  color: white;
+  font-weight: bold;
+  border-radius: 100px;
+  background-color: #686868;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  cursor: pointer;
+}
+
+.btn-wide_footer {
+  width: 150px;
+  padding: 2%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  font-size: normal;
+
+  h1 {
+    padding-top: 1%;
+  }
+
+  i {
+    color: white;
+    margin-right: 0.5%;
+  }
+}
+
+.lessmargin-right {
+  margin-right: 0.1%;
+}
+
+/* footer img 
+{
+    width: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+} */
+
+footer li {
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+li:last-child {
+  padding-bottom: 1%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+@media all and (min-width: 1366px) and (max-width: 1875px)
+{
+  .sections
+  {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu-items, .title
+  {
+    margin-left: 100px;
+  }
+  
+  .menu-items
+  {
+    width: 375px;
+  }
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1365px) {
+  .logo {
+    width: 30%;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .sections {
+    flex-direction: column;
+
+    /* align-items: center; */
+  }
+
+  .menu-items {
+    width: 80%;
+  }
+
+  .btn-wide_footer {
+    width: 300px;
+    padding: 4%;
+    margin-top: 2.5%;
+    margin-bottom: 2%;
+  }
+}
+
+@media all and (min-width: 365px) and (max-width: 768px) {
+  .logo {
+    width: 50%;
+  }
+
+  .logo-arrow-left i {
+    font-size: 20px;
+  }
+
+  .food-photo {
+    height: 250px;
+  }
+
+  .menu {
+    h1 {
+      margin-left: 2%;
+    }
+
+    width: 100%;
+  }
+
+  .sections {
+    flex-direction: column;
+
+    /* align-items: center; */
+  }
+
+  .menu-items {
+    width: 90%;
+  }
+
+  .menu-header i {
+    margin-left: 85%;
+  }
+
+  h3 {
+    font-size: 98%;
+  }
+
+  .btn-wide_footer {
+    width: 150px;
+    padding: 4%;
+    margin-top: 2.5%;
+    margin-bottom: 2%;
+  }
+}

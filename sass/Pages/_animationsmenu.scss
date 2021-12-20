@@ -1,0 +1,282 @@
+/* Apparitions des menus */
+
+
+.menu-items
+{
+    animation: emergence 0.30s linear forwards;
+    opacity: 0;
+}
+
+.two
+{  
+    animation-delay: 0.30s; 
+}
+
+.three
+{
+    animation-delay: 0.60s;
+}
+
+.four
+{
+    animation-delay: 0.90s;
+}
+
+.five
+{
+    animation-delay: 1.20s;
+}
+
+.six
+{
+    animation-delay: 1.50s;
+}
+
+.seven
+{
+    animation-delay: 1.80s;
+}
+
+.height
+{
+    animation-delay: 2.10s;
+}
+
+.nine
+{
+    animation-delay: 2.40s;
+}
+
+.teen
+{
+    animation-delay: 2.70s;
+}
+
+@keyframes emergence
+{
+    0%{opacity: 0;}
+    25%{opacity: 0.25;}
+    50%{opacity: 0.5;}
+    75%{opacity:0.75;}
+    100%{opacity: 1;}
+}
+
+
+
+/* === Apparition du panier au survol ==== */
+
+
+/* Création du panier */
+
+// .price:hover
+// {
+//     animation: slide-left 2s linear both ;
+// }
+
+// .menu-items:hover
+// {
+//     transform-origin: left;
+//     background-color: #99E2D0;
+//     transition: transform 3000ms ease-in-out;
+//     transform: scaleX(0.8);
+//     text-overflow: ellipsis;
+// }
+.box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    // width: 15vh;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #99E2D0;
+    position: absolute;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 25%;
+    // margin-bottom: 46px;
+    // margin-top: -12px;
+    &:hover
+    {
+    animation: slide-left 0.5s linear both;
+}
+}
+.circlemenu
+{
+    color: #f6f6f6;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    // &:hover
+    // {
+    //    animation: rotate90 0.5s  linear both;
+    //     transform-origin: left;
+    //     transition: transform 3s linear;
+    //     transform: translateX(-100px);
+    // }
+    // &:hover
+    // {
+    //     transform-origin: left;
+    //     background-color: #99E2D0;
+    //     transition: transform 3000ms ease-in-out;
+    //     transform: scaleX(0.8);
+    // }
+    // position: relative;
+    // animation: discovery 1s forwards linear ;
+}
+
+@keyframes slide-left
+{
+
+    0%{
+        transform: translateX(0px);
+    }
+
+    100%{
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes rotate90
+{
+
+    0%{
+        transform: rotate(180deg);
+    }
+    
+    100%{
+        transform: rotate(0);
+
+    }
+}
+
+
+// .circle-menu
+// {
+//     width:100px;
+//     background: #99E2D0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     opacity: 0;
+//     // animation: discovery 1s forwards linear ;
+//     // padding: 5%;
+//     // margin-left: -15px;
+//     // margin-bottom: -15px;
+// }
+
+
+
+
+// .menu-items:hover
+// {
+//     cursor: pointer;
+//     animation: itemAppear .6s;
+//     // animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+//     // animation-fill-mode: both;
+//     transform-origin: left;
+//     max-width: 100%;
+//     background-color: green;
+// }
+
+// @keyframes itemAppear
+// {
+//     100%{transform: scaleX(0.8) ;}
+// }
+
+// .menu-items
+// {
+//     text-overflow: ellipsis;
+//     overflow:hidden;
+    
+
+//     &:hover
+//     {
+//         transform-origin: left;
+//         background-color: #99E2D0;
+//         transition: transform 3000ms ease-in-out;
+//         transform: scaleX(0.8);
+//     }
+    
+// }
+
+// .reduction
+// {
+//     text-overflow: ellipsis;
+//     overflow:hidden;
+    
+
+    // &:hover
+    // {
+    //     transform-origin: left;
+    //     background-color: #99E2D0;
+    //     transition: transform 3000ms ease-in-out;
+    //     transform: scaleX(0.8);
+    // }
+// }
+
+
+
+// .price:hover
+// {
+//     transform-origin: left;
+//     transform: scaleX(0.8);
+//     transition: transform 3000ms ease-in-out;
+// }
+
+/* animation du panier */
+
+
+
+
+
+
+
+// .background-circlemenu:hover
+// {
+//     animation: spotlight 1s linear ;
+//     opacity: 0;
+// }
+// .fa-check 
+// {
+//     color: #99E2D0;
+// }
+
+@keyframes discovery
+{
+    0% {
+        transform: scaleX(0);
+    }
+    50% {
+        transform: scaleX(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+// @keyframes spotlight
+// {
+//     0%{
+//         transform: translate(0px,0) ;
+//         opacity: 0;
+//     }
+
+//     50%{
+//         transform: translate(-50px,0) ;
+//         opacity: 1;
+//     }
+
+//     100%{
+//         transform: translate(-100px,0) ;
+//         opacity: 1;
+//     }
+// }

@@ -1,0 +1,47 @@
+footer 
+{
+    background-color: #353535;
+    color: white;
+    font-size: large;
+    margin-top: 0px;
+}
+
+footer i 
+{
+    color: white;
+    margin-right: 0.5%;
+}
+
+footer a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.lessmargin-right
+{
+    margin-right: 0.1%;
+}
+
+footer h1
+{
+    margin-right: 95%;
+}
+ul 
+{
+    list-style: none;
+}
+
+li:last-child 
+{
+    padding-bottom: 1%;
+}
+
+@media all and (min-width: 365px) and (max-width: 768px) 
+{
+    footer h1
+    {
+        padding-top: 3%;
+        font-size: 25px;
+    }
+}

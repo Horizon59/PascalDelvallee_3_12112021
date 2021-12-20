@@ -1,0 +1,43 @@
+.flex-space-between
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.flex-center
+{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-center-column
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-wrap
+{
+    display: flex;
+    flex-grow: row wrap;
+}
+
+.flex-space-around
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+body
+{
+    overflow-x: hidden;
+}
+
+.center 
+{
+    text-align: center;
+}
