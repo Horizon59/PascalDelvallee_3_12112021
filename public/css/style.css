@@ -89,11 +89,6 @@ li:last-child {
   cursor: pointer;
 }
 
-.btn-wide_header {
-  size: 15%;
-  /* box-shadow: 25rem 0.25rem 10px rgb(0 0 0 / 25%); */
-}
-
 /* MAIN RULES */
 /* TUTO */
 .tutorial {
@@ -202,7 +197,7 @@ figure img {
   position: relative;
 }
 
-figcaption i {
+.figcaption i {
   margin-left: 16.5%;
   margin-top: -2%;
   position: absolute;
@@ -254,7 +249,7 @@ figcaption i {
     height: auto;
   }
 
-  figcaption i {
+  .figcaption i {
     margin-left: 85%;
     margin-top: -15px;
   }
@@ -293,7 +288,7 @@ figcaption i {
     width: 98%;
   }
 
-  figcaption i {
+  .figcaption i {
     margin-left: 85%;
     margin-top: -15px;
   }
@@ -308,6 +303,13 @@ h1 {
 
 h3 {
   margin-bottom: 0%;
+}
+
+.subtitle-homepage {
+  font-family: "Shrikhand";
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
 }
 
 .quote {
@@ -482,46 +484,6 @@ h2 {
   margin-left: auto;
 }
 
-footer {
-  background-color: #353535;
-  color: white;
-  font-size: normal;
-}
-footer h1 {
-  padding-top: 1%;
-}
-footer i {
-  color: white;
-  margin-right: 0.5%;
-}
-
-.lessmargin-right {
-  margin-right: 0.1%;
-}
-
-/* footer img 
-{
-    width: 10%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-} */
-footer li {
-  margin-bottom: 5px;
-}
-
-ul {
-  list-style: none;
-}
-
-li:last-child {
-  padding-bottom: 1%;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
 @media all and (min-width: 1366px) and (max-width: 1875px) {
   .sections {
     flex-wrap: wrap;
@@ -621,11 +583,6 @@ footer a {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.flex-wrap {
-  display: flex;
-  flex-grow: row wrap;
 }
 
 .flex-space-around {

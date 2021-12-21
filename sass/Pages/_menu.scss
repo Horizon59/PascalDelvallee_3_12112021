@@ -179,48 +179,6 @@ h2 {
   margin-left: auto;
 }
 
-footer {
-  background-color: #353535;
-  color: white;
-  font-size: normal;
-
-  h1 {
-    padding-top: 1%;
-  }
-
-  i {
-    color: white;
-    margin-right: 0.5%;
-  }
-}
-
-.lessmargin-right {
-  margin-right: 0.1%;
-}
-
-/* footer img 
-{
-    width: 10%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-} */
-
-footer li {
-  margin-bottom: 5px;
-}
-
-ul {
-  list-style: none;
-}
-
-li:last-child {
-  padding-bottom: 1%;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-}
 
 @media all and (min-width: 1366px) and (max-width: 1875px)
 {
