@@ -21,9 +21,11 @@
       opacity: 85%;
       margin-bottom: 0px;
     }
-  
+    
+
     .dye-header {
-      background: #fafafa;
+      background: #f5f2f2;
+      
       // display: flex;
       // flex-direction: column;
       // align-items: center;
@@ -97,7 +99,7 @@
       border-radius: 25px;
       width: 350px;
       padding: 5%;
-      background-color: #f6f6f6;
+      background-color: #f5f2f2;
       box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
       font-weight: bold;
       font-size: large;
@@ -115,19 +117,23 @@
       color: grey;
     }
   
-    .fa-store {
-      color: rgb(147, 86, 220) !important;
-    }
+    // .fa-store {
+    //   color: rgb(147, 86, 220) !important;
+    // }
   
-    .case2 {
+    .case:hover {
       background-color: rgb(147, 86, 220, 0.1);
+      cursor: default;
+      &:hover i{
+        color: rgb(147, 86, 220) 
+      }
     }
-  
+    
     /* Store */
     
     .restaurants 
     {
-      background-color: #fafafa;
+      background-color: #f5f2f2;
       padding-top: 0.5%;
       padding-bottom: 0.5%;
       margin-bottom: 0px;
@@ -217,10 +223,19 @@
         margin-top: 50px;
         height: 800px;
       }
+
+      .news
+      {
+        transform:translateX(-50%);
+        width: auto;
+      }
     }
   
   @media all and (min-width: 768px) and (max-width: 1365px) 
 {
+  body{
+    width: 100%;
+  }
   .btn
   {
     height: 35px;
@@ -267,6 +282,9 @@
 @media all and (min-width: 320px) and (max-width: 768px)
 {
 
+  body{
+    width: 100%;
+  }
   .btn
   {
     width: 205px;
